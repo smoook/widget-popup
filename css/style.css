@@ -1,0 +1,80 @@
+/*======== 通用模块 ========*/
+.widget-mask{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.85);z-index: 99;}
+
+/*======== 弹出框组件 ========*/
+.widget-card-wrap{
+    font-size: .13rem;
+}
+.widget-card-wrap .widget-card-info{
+    background: #ffffff;
+    width: 3.74rem;
+    height: 3.52rem;
+    margin-top: 1rem;
+    border-radius: .1rem;
+}
+.widget-card-wrap .widget-card-info .widget-card-tit{
+    width: 1.05rem;
+    height: .26rem;
+    margin: 0 auto;
+    background: url(../images/popup_info_tit.png) no-repeat left 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.widget-card-wrap .widget-card-info .widget-card-ct{
+    width: 2.605rem;
+    height: 2.025rem;
+    overflow-y: auto;
+    margin: .425rem auto 0;
+}
+.widget-card-wrap .widget-card-info .widget-card-ft{
+    position: relative;
+    height: .915rem;
+    background: url(../images/popup_info_ft.png) no-repeat left 100%;
+    color: #fecec3;
+    
+}
+.widget-card-wrap .widget-card-info .widget-card-ft .widget-ft-avatar{
+    position: absolute;
+    left: .21rem;
+    bottom: .085rem;
+}
+.widget-card-wrap .widget-card-info .widget-card-ft .widget-ft-avatar .widget-avatar{
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    border-radius: 100%;
+    background: #d9d3d3;
+}
+
+.widget-card-wrap .widget-card-info .widget-card-ft .widget-ft-heart{
+    position: absolute;
+    right: .165rem;
+    bottom: .18rem;
+}
+.widget-card-wrap .widget-card-info .widget-card-ft .widget-ft-heart .widget-heart-btn{
+    width: .36rem;
+    height: .36rem;
+    border-radius: 100%;
+    background: #ffffff;
+    
+}
+
+
+.widget-card-wrap .widget-swiper-tips{
+    text-align: center;
+    color: #ffffff;
+}
+.widget-card-wrap .widget-swiper-tips .widget-tips-finger{
+    width: 1.44rem;
+    height: .395rem;
+}
+.widget-card-wrap .widget-swiper-tips .widget-tips-text{
+    font-size: .13rem;
+}
+.widget-card-wrap .widget-swiper-tips .widget-round-btn{
+    display: inline-block;
+    font-size: .14rem;
+    padding: .085rem .175rem;
+    border: .005rem solid #ffffff;
+    border-radius: 2rem;
+}
