@@ -9,12 +9,12 @@
 }
 /*======== 弹出框组件 ========*/
 .widget-pop-box {
-    animation: FideIn 2s both;
+    animation: FadeIn 2s both;
     position: absolute;
     left: 50%;
     margin-left: -3.05rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .widget-pop-box-hd {
@@ -179,7 +179,7 @@
 }
 
 .widget-hand-slide-pic {
-    background: url(../images/hander-slide-bg.png) no-repeat;
+    background: url(../images/hand-slide-bg.png) no-repeat;
     background-size: 100% 100%;
     width: 2.88rem;
     height: .79rem;
@@ -208,6 +208,6 @@
     margin: 0 auto
 }
 
-.widget-hander-slide.hide {
+.widget-hand-slide.hide {
     animation: FadeOut .5s both
 }

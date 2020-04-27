@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
-    <title>弹出框模块</title>
+    <title>腾讯理财通</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
     <script>
+        // 动态设置html font-size
         window.addEventListener('resize', resize, false);
         function resize() {
             var html = document.documentElement;
@@ -21,7 +22,10 @@
     </script>
 </head>
 <body>
+    <!-- 遮罩层 -->
     <div class="widget-mask">
+
+        <!-- 弹窗 -->
         <div class="widget-pop-box">
             <div class="widget-pop-box-hd">
                 <p class="widget-pop-box-title">精选用户故事</p>
@@ -45,10 +49,12 @@
                     </div>
                 </div>
                 <div class="widget-like">
+                    <!-- 点击后，添加active类，爱心动画 -->
                     <div class="widget-like-pic">
                         <i class="widget-like-icon"></i>
                     </div>
                     <div class="widget-like-text">
+                        <!--点赞被点击后，添加animate， -->
                         <a class="widget-like-sum"><span class="widget-like-sumtext" id="like-sumtext">291</span>人点赞</a>
                     </div>
                 </div>
