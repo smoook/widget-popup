@@ -7,36 +7,81 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
+    <script>
+        window.addEventListener('resize', resize, false);
+        function resize() {
+            var html = document.documentElement;
+            var k = html.clientWidth;
+            if(k>=750){
+                k = 750;
+            }
+            html.style.fontSize = k / 7.5 + "px";
+        }
+        resize();
+    </script>
 </head>
 <body>
     <div class="widget-mask">
-        <div class="widget-card-wrap">
-            <div class="widget-card-info">
-                <div class="widget-card-tit">
-                    精选用户故事
+        <div class="widget-pop-box">
+            <div class="widget-pop-box-hd">
+                <p class="widget-pop-box-title">精选用户故事</p>
+            </div>
+            <div class="widget-pop-box-bd">
+                <div class="widget-pop-box-content">
+                    <p>在网上混了很久，看了许多网友写的自己理财情况，学到了很多经验。今天我也把6年的理财生活拿出来晒一晒！</p>
+                    <p>简单叙述一下家庭情况：我和老婆是地道的北京人，大学毕业在北京找的工作(靠自己)，我父母是普通工人每人每月收入3000左右，她父母是商场的服务人员每月收入也不多，所以要想发家致富就得靠自己了在网上混了很久，看了许多网友写的自己理财情况，学到了很多经验。今天我也把6年的理财生活拿出来晒一晒！简单叙述一下家庭情</p>
                 </div>
-                <div class="widget-card-ct">
-                    在网上混了很久，看了许多网友写的自己理财情况，学到了很多经验。今天我也把6年的理财生活拿出来晒一晒！
-简单叙述一下家庭情况：我和老婆是地道的北京人，大学毕业在北京找的工作(靠自己)，我父母是普通工人每人每月收入3000左右，她父母是商场的服务人员每月收入也不多，所以要想发家致富就得靠自己了在网上混了很久，看了许多网友写的自己理财情况，学到了很多经验。今天我也把6年的理财生活拿出来晒一晒！简单叙述一下家庭情
-
-                </div>
-                <div class="widget-card-ft">
-                    <div class="widget-ft-avatar">
-                        <img class="widget-avatar" src="" alt="">
-                        <span>顽强的阿力</span>|<span>湖北</span>
+            </div>
+            <div class="widget-pop-box-ft">
+                <div class="widget-pop-box-info">
+                    <div class="widget-pop-box-userimg">
+                        <img src="./images/user-img.png" alt="用户头像">
                     </div>
-                    <div class="widget-ft-heart">
-                        <div class="widget-heart-btn"></div>
-                        <div class="widget-heart-count">291人点赞</div>
+                    <div class="widget-pop-box-username">
+                        <a>顽强的阿力</a>
+                    </div>
+                    <div class="widget-pop-box-userarea">
+                        <a>湖北</a>
+                    </div>
+                </div>
+                <div class="widget-like">
+                    <div class="widget-like-pic">
+                        <i class="widget-like-icon"></i>
+                    </div>
+                    <div class="widget-like-text">
+                        <a class="widget-like-sum"><span class="widget-like-sumtext" id="like-sumtext">291</span>人点赞</a>
                     </div>
                 </div>
             </div>
-            <div class="widget-swiper-tips">
-                <img class="widget-tips-finger" src="./images/tips_finger.png" alt="">
-                <div class="widget-tips-text">左右滑动查看更多故事</div>
-                <div class="widget-round-btn">我知道了</div>
+            <div class="widget-hand-slide">
+                <div class="widget-hand-slide-hd">
+                    <div class="widget-hand-slide-pic"></div>
+                </div>
+                <div class="widget-hand-slide-bd">
+                    <p class="widget-hand-slide-text">左右活动查看更多故事</p>
+                </div>
+                <div class="widget-hand-slide-ft">
+                    <a class="widget-hand-slide-btn">我知道了</a>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script>
+    /*点赞交互*/
+    $(".widget-like-pic").click(function(){
+        $(".widget-like-pic").addClass("active");
+        var num = $("#like-sumtext").text();
+        num ++;
+        document.getElementById("like-sumtext").innerHTML = num;
+        $(".widget-like-sumtext").addClass("animate");
+    });
+    
+
+    /*关闭提示*/
+    $(".widget-hand-slide-btn").click(function(){
+        $(".widget-hand-slide").addClass("hide");
+    });
+</script>
 </html>

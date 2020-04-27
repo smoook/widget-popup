@@ -32,10 +32,6 @@ fieldset, img {
     border: 0
 }
 
-html {
-    font-size: 100px
-}
-
 button, input, select, textarea {
     font-family: Helvetica Neue, Helvetica, Segoe UI, Roboto, Ubuntu, DejaVu Sans, Arial, PingFang SC, Hiragino Sans GB, Source Han Sans, Microsoft YaHei UI, Microsoft Yahei, Heiti SC, sans-serif;
     font-size: 16px;
