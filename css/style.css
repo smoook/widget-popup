@@ -11,14 +11,18 @@
     height: 3.52rem;
     margin-top: 1rem;
     border-radius: .1rem;
+    position: relative;
 }
 .widget-card-wrap .widget-card-info .widget-card-tit{
-    width: 1.05rem;
-    height: .26rem;
+    width: 2.1rem;
+    height: .52rem;
     margin: 0 auto;
-    background: url(../images/popup_info_tit.png) no-repeat left 100%;
+    background: url(../images/popup_info_tit.png) no-repeat;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
+    position: relative;
+    top: -.12rem;
 }
 .widget-card-wrap .widget-card-info .widget-card-ct{
     width: 2.605rem;
@@ -27,9 +31,13 @@
     margin: .425rem auto 0;
 }
 .widget-card-wrap .widget-card-info .widget-card-ft{
-    position: relative;
-    height: .915rem;
-    background: url(../images/popup_info_ft.png) no-repeat left 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.83rem;
+    background: url(../images/popup_info_ft.png) no-repeat;
+    background-size: cover;
     color: #fecec3;
     
 }
@@ -67,6 +75,7 @@
 .widget-card-wrap .widget-swiper-tips .widget-tips-finger{
     width: 1.44rem;
     height: .395rem;
+    animation: shake 1s linear infinite alternate-reverse;
 }
 .widget-card-wrap .widget-swiper-tips .widget-tips-text{
     font-size: .13rem;
